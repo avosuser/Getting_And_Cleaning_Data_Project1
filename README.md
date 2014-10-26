@@ -24,21 +24,22 @@ This Repository has all the data files and code for the "Getting and Cleaning Da
 		<li>meltedData</li>
 		<li>subjActivityAvgData</li>
 	</ul>
-	
-* I setup my working directory and load the needed libraries.
 ##### Started with the 'train' data set.
+
+* I setup my working directory and load the needed libraries.
+
 * I read the features.txt file, the variables from this file will by used for naming columns on our test and train data set.
 	<p>
 	Sample Output:<br />
-	> head(colNames,2)
-	[1] "tBodyAcc-mean()-X" "tBodyAcc-mean()-Y"
+	> head(colNames,2)<br />
+	[1] "tBodyAcc-mean()-X" "tBodyAcc-mean()-Y"<br />
 	</p>
 * I read in the main 'test' data file and set the column names from the previous step. This will create table xTestTable and for the most part will be the master table for the 'test' data.
 	<p>
 	Sample Output:<br />
-	> head(xTestTable,1)
-     tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z ..."<and many more>"
-	1:       0.2571778       -0.02328523       -0.01465376 
+	> head(xTestTable,1)<br />
+     tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z ..."<and many more>"<br />
+	1:       0.2571778       -0.02328523       -0.01465376 <br />
 	</p>
 * Next I use the data.table like function to select the mean & standard dev columns from the colNames table I created earlier. I am selecting any columns with a '-mean' or '-std' as the columns containing the data we need for the project.
 	Sample Output:<br />
