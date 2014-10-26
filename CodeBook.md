@@ -16,10 +16,7 @@
 <li>6 <- "LAYING"</li> 
 </ul>
 
-<ul>
 * Column2: 30 People in the experiment labelled 1 thru 30</br>
-<li>1 to 30 </li>
-</ul>
 
 * Columns 3 thru 81 (Mean and Standard Deviation Measurement feature vector with time and frequency domain variables)
 
