@@ -97,3 +97,6 @@ setkey(finalTable, Activity)
 # Melt and Cast the finalTable, this will give us the Tidy Table 'subjActivityAvgData' and has the data we need for the project.
 meltedData <- melt(finalTable, id=c("Activity", "Subject"))
 subjActivityAvgData <- dcast(meltedData, Activity + Subject ~ variable,mean)
+
+#Write the tidy data set to a file
+write.table(subjActivityAvgData,"./subjActivityAvgData.txt")
