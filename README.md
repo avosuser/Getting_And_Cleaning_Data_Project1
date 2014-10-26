@@ -1,5 +1,5 @@
 
-## Detail of how I went about doing the "Getting and Cleaning Data" Poject1 assignment.
+## "Getting and Cleaning Data" Poject1 Assignment Summary.
 
 This Repository has all the data files and code for the "Getting and Cleaning Data" Project1 Assignment.
 
@@ -14,9 +14,11 @@ This Repository has all the data files and code for the "Getting and Cleaning Da
 
 * I setup my working directory and load the needed libraries.
 * I read the features.txt file, the variables from this file will by used for naming columns on our test and train data set.
-	Sample Output
+	<p>
+	Sample Output:<br />
 	> head(colNames,2)
 	[1] "tBodyAcc-mean()-X" "tBodyAcc-mean()-Y"
+	</p>
 *I read in the main 'test' data file and set the col
 
 
