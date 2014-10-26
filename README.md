@@ -3,14 +3,14 @@
 
 This Repository has all the data files and code for the "Getting and Cleaning Data" Project1 Assignment.
 
-* My code uses package data.table, see comments on the code file for installation instructions.
-* I setup working directory which suits my needs, feel free to change it as needed for your computer.
-
 ##### Data used on this project
 
 * The Data for the project was obtained here https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 ##### How my code works
+
+* I Installed and loaded the needed libraries.
+* I setup a working directory which suits my needs, feel free to change it as needed for your computer.
 
 * Tables Created with my R code
 	<ul>
@@ -26,8 +26,6 @@ This Repository has all the data files and code for the "Getting and Cleaning Da
 	</ul>
 <p style="font-size: 1em;">
 ##### Started with the 'train' data set.
-
-* I setup my working directory and load the needed libraries.
 
 * I read the features.txt file, the variables from this file will by used for naming columns on our test and train data set.
 	<p>

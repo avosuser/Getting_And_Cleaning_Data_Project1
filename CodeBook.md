@@ -5,6 +5,24 @@
 * The Data for the project was obtained here https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 ##### Variables used for my Tidy Data Set
+* Dimensions: 81 Columns, 180 Rows
+<ul>
+* Column1: Activity</br>
+<li>1 <- "WALKING"</li>
+<li>2 <- "WALKING_UPSTAIRS"</li> 
+<li>3 <- "WALKING_DOWNSTAIRS"</li>
+<li>4 <- "SITTING"</li> 
+<li>5 <- "STANDING"</li> 
+<li>6 <- "LAYING"</li> 
+</ul>
+
+<ul>
+* Column2: 30 People in the experiment labelled 1 thru 30</br>
+<li>1 to 30 </li>
+</ul>
+
+* Columns 3 thru 81 (Mean and Standard Deviation Measurement feature vector with time and frequency domain variables)
+
 * I went with the approach where I selected all variables with a '-mean' & '-std' anywhere in the names of the variable in the 'features.txt' file. This approach may give a few more variables which may/maynot be needed by a user, however its much easier to remove un-needed  data than modifying the code to get more data.
 
 * Mean and Standard Deviation Measurements Used In My Tidy Data Set
