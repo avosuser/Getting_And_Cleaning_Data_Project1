@@ -5,7 +5,7 @@
 * The Data for the project was obtained here https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 ##### Variables used for my Tidy Data Set
-* I went with the approach where I selected all varibles with a '-mean' & '-std' in the 'features.txt' file. This approach may give a few more variables which may not be needed by a user, however its much easier to remove un-needed  data than modifying the code to get more data.
+* I went with the approach where I selected all variables with a '-mean' & '-std' anywhere in the names of the variable in the 'features.txt' file. This approach may give a few more variables which may/maynot be needed by a user, however its much easier to remove un-needed  data than modifying the code to get more data.
 
 * Mean and Standard Deviation Measurements Used In My Tidy Data Set
 <ul>
@@ -79,12 +79,12 @@
 <li>"fBodyAccMag-mean()" </li>     
 <li>"fBodyAccMag-meanFreq()"  </li> 
 <li> "fBodyBodyAccJerkMag-mean()" </li>
-<li> "fBodyBodyAccJerkMag-std()" </li>     
-<li> "fBodyBodyAccJerkMag-meanFreq()" </li>
-<li>"fBodyBodyGyroMag-mean()" </li>     
-<li>"fBodyBodyGyroMag-std()"   </li>    
-<li>"fBodyBodyGyroMag-meanFreq()"  </li>  
-<li>"fBodyBodyGyroJerkMag-mean()" </li>
-<li>"fBodyBodyGyroJerkMag-std()"  </li> 
+<li> "fBodyBodyAccJerkMag-std()"</li>     
+<li> "fBodyBodyAccJerkMag-meanFreq()"</li>
+<li>"fBodyBodyGyroMag-mean()"</li>     
+<li>"fBodyBodyGyroMag-std()" </li>    
+<li>"fBodyBodyGyroMag-meanFreq()" </li>  
+<li>"fBodyBodyGyroJerkMag-mean()"</li>
+<li>"fBodyBodyGyroJerkMag-std()" </li> 
 <li>"fBodyBodyGyroJerkMag-meanFreq()"</li>
 </ul>
