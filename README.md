@@ -43,34 +43,34 @@ This Repository has all the data files and code for the "Getting and Cleaning Da
 	</p>
 * Next I use the data.table like function to select the mean & standard dev columns from the colNames table I created earlier. I am selecting any columns with a '-mean' or '-std' as the columns containing the data we need for the project.
 	Sample Output:<br />
-	> head(xTestTable, 1)
-    tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z ..."<and many more>"
-    1:      0.2571778       -0.02328523       -0.01465376 
+	> head(xTestTable, 1)<br />
+    tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z ..."<and many more>"<br />
+    1:      0.2571778       -0.02328523       -0.01465376 <br />
 * I then read the 'subject' data and this as a new column 
 	<p>
-	Sample Output:<br />
-	> head(xTestTable, 1)
-    tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z ..............Subject
-    1:      0.2571778       -0.02328523       -0.01465376                     2
+	Sample Output:<br /><br />
+	> head(xTestTable, 1)<br />
+    tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z ..............Subject<br />
+    1:      0.2571778       -0.02328523       -0.01465376                     2<br />
 	</p>
 * I read the 'activity' data i.e 'Y_test.txt' and give the activity number 1 thru 6 descriptive names like "WALKING" and so on. This part of the code will create table 'testActivityTable'
 	<p>
 	Sample Output:<br />
-	> head(testActivityTable, 3)
-    Activity
-	1: STANDING
-	2: STANDING
-	3: STANDING
+	> head(testActivityTable, 3)<br />
+    Activity<br />
+	1: STANDING<br />
+	2: STANDING<br />
+	3: STANDING<br />
 	</p>
 * Next I then add the column from 'testActivityTable' to my master table 'xTestTable', add a column called 'Key' and order the table so that it will have the columns 'Key', 'Subject', 'Activity' at the very beginning.
 	<p>
 	Sample Output:<br />
-	> head(xTestTable, 1)
-       Key Subject Activity tBodyAcc-mean()-X tBodyAcc-mean()-Y ..."<and many more>"
-    1:   1       2 STANDING         0.2571778       -0.02328523   
+	> head(xTestTable, 1)<br />
+       Key Subject Activity tBodyAcc-mean()-X tBodyAcc-mean()-Y ..."<and many more>"<br />
+    1:   1       2 STANDING         0.2571778       -0.02328523 <br />  
 	</p>
 
-##### * I did the same exact steps as above for the 'train' data set.
+##### I did the same exact steps as above for the 'train' data set.
 * The only difference is that when added the 'Key' column I started from 2948 (the 'test' data set has 2947 rows).
 
 ##### Merging the 'test' and 'train' data and getting averages
@@ -81,15 +81,15 @@ This Repository has all the data files and code for the "Getting and Cleaning Da
 
 	<p>
 	Sample Output:<br />
-	> dim(subjActivityAvgData)
-	[1] 180  81
+	> dim(subjActivityAvgData)<br />
+	[1] 180  81<br />
 
-	> head(subjActivityAvgData, 1)
-	  Activity Subject tBodyAcc-mean()-X tBodyAcc-mean()-Y ..."<and many more>"
-	1   LAYING       1         0.2215982       -0.04051395
+	> head(subjActivityAvgData, 1)<br />
+	  Activity Subject tBodyAcc-mean()-X tBodyAcc-mean()-Y ..."<and many more>"<br />
+	1   LAYING       1         0.2215982       -0.04051395<br />
 	
 	> tail(subjActivityAvgData, 1)
-        Activity                   Subject tBodyAcc-mean()-X tBodyAcc-mean()-Y ..."<and many more>"
-    180 WALKING_UPSTAIRS                30         0.2714156       -0.02533117
+        Activity                   Subject tBodyAcc-mean()-X tBodyAcc-mean()-Y ..."<and many more>"<br />
+    180 WALKING_UPSTAIRS                30         0.2714156       -0.02533117<br />
 	</p>
 	
