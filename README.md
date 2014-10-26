@@ -24,7 +24,7 @@ This Repository has all the data files and code for the "Getting and Cleaning Da
 		<li>meltedData</li>
 		<li>subjActivityAvgData</li>
 	</ul>
-<p style="font-size: 1.2em;">
+<p style="font-size: 1em;">
 ##### Started with the 'train' data set.
 
 * I setup my working directory and load the needed libraries.
