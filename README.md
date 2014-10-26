@@ -1,25 +1,28 @@
 
-## "Getting and Cleaning Data" Poject1 Assignment Summary.
+### "Getting and Cleaning Data" Poject1 Assignment Summary.
 
 This Repository has all the data files and code for the "Getting and Cleaning Data" Project1 Assignment.
 
 * My code uses package data.table, see comments on the code file for installation instructions.
 * I setup working directory which suits my needs, feel free to change it as needed for your computer.
 
-## Data used on this project
+##### Data used on this project
 
 * The Data for the project was obtained here https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-## How my code works
+##### How my code works
 
 * Tables Created with my R code
 	<ul>
-	<li>colNames<li/>
-	<li>xTestTable</li>
-	<li>stdMeanColumns</li>
-	<li>myColumns</li>
-	<li>testActivityTable</li>
-	
+		<li>colNames</li>
+		<li>xTestTable</li>
+		<li>stdMeanColumns</li>
+		<li>myColumns</li>
+		<li>testActivityTable</li>
+		<li>xTrainTable</li>
+		<li>trainActivityTable</li>
+		<li>meltedData</li>
+		<li>subjActivityAvgData</li>
 	</ul>
 	
 * I setup my working directory and load the needed libraries.
@@ -67,3 +70,25 @@ This Repository has all the data files and code for the "Getting and Cleaning Da
 	</p>
 
 ##### * I did the same exact steps as above for the 'train' data set.
+* The only difference is that when added the 'Key' column I started from 2948 (the 'test' data set has 2947 rows).
+
+##### Merging the 'test' and 'train' data and getting averages
+* I merged the 'test' and 'train' data set into a big single table, called 'finalTable'
+* I do not need the 'Key' column any more as it adds an extra column for my averges table. I remove the 'Key' column.
+* Next I melt the 'finalTable' using columns 'Activity' & 'Subject' as id's and all other columns as variables.
+* I finally cast the data to get my averages. My final table is called 'subjActivityAvgData' 
+
+	<p>
+	Sample Output:<br />
+	> dim(subjActivityAvgData)
+	[1] 180  81
+
+	> head(subjActivityAvgData, 1)
+	  Activity Subject tBodyAcc-mean()-X tBodyAcc-mean()-Y ..."<and many more>"
+	1   LAYING       1         0.2215982       -0.04051395
+	
+	> tail(subjActivityAvgData, 1)
+        Activity                   Subject tBodyAcc-mean()-X tBodyAcc-mean()-Y ..."<and many more>"
+    180 WALKING_UPSTAIRS                30         0.2714156       -0.02533117
+	</p>
+	
